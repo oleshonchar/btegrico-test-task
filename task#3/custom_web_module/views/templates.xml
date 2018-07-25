@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+
+     <template id="product_category" inherit_id="website_sale.products">
+        <xpath expr="//div[@id='products_grid']//t[@t-if]" position="before">
+            <tr>
+                <td>
+                    <h1>
+                        <t t-raw="td_product['product']['public_categ_ids']['name']"></t>
+                    </h1>
+                </td>
+            </tr>
+        </xpath>
+     </template>
+
+</odoo>
